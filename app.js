@@ -62,6 +62,7 @@ function draw() {
         age = 19
         print(canIGoToTheCasino(age, "IA"))
         print(canIGoToTheCasino(age, "MN"))
+        print(WhatShouldIWear(temp=90))
     }
 
     day1am();
@@ -81,5 +82,20 @@ function draw() {
     }
     function canIGoToTheCasino(age, location) {
         return age >= 21 && location == "IA" || age >= 18 && location == "MN";
-
-    }
+        function canISleepIn(day) {
+            // Assume a "normal" Mon-Fri 8am-5pm job
+            //return true if the day if Sat or Sun
+            //or vacation or holiday
+        }
+        function whatIShouldWear(temp) {
+            if(temp >= 75) {
+                return "swim wear)";
+            }else if (temp >= 45){
+                return "light jacket";
+            }else if (temp >= 10){
+                return "Winter jacket";
+            }else {
+                return 'Don\t go outside';
+            }     
+    
+        }
