@@ -21,12 +21,12 @@ function draw() {
         var fullName = "Lexie Hawkins";
         var age = 38;
         var weight = 192.5;var heightInInches = 75;
-        var height = 75;
+        var heightInInches =67;
         var address = '123 Main St';
         var middleName ;
         console.log(middleName);
         
-        console.log(typeofname(fullName)0;
+        console.log(typeof(fullName));
         console.log (typeof(weight));
         var likesPizza = true;
         var hasTattoos = false;
@@ -35,8 +35,8 @@ function draw() {
         console.log (age);
         age = 39;
         console.log(age);
-        age = age + 1 
-        console.log(age0;)
+        age = age + 1;
+        console.log(age);
         // give age a value and add 1 put back in age
         age++;
         // adds 2 years to age and stores in age
@@ -45,14 +45,27 @@ function draw() {
         weight = weight - 1;
         weight-= 0.25;
         console.log(weight);
-        console.log(fullName = " is " + age + "" years old."");
-        console.log(Do you like pizza? " + likesPizza);
+        console.log(fullName + " is " + age + " years old.");
+        console.log("Do you like pizza? " + likesPizza);
         var feet = Math.floor(heightInInches / 12) ;
         console.log(feet);
         var inches = heightInInches % 12;
         console.log(fullName + " is " +feet + " foot " + inches + " inches tall");
 
-        
+        print('Hello World');
+        var convertedTemp = f2c(212);
+        print (convertedTemp);
     }
 
     day1am();
+
+    function print(input) {
+        console.log(input);
+
+    }
+    //convert fahrenheit to celcius
+    //Inout temo in Fahreheit
+    function f2c(t) {
+        return((t - 32) * (5 / 9));
+    }
+    
