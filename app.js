@@ -14,7 +14,10 @@ function draw() {
     strokeWeight(3);
     line(0, 40, 640, 40);
     
-}
+}   
+    function dayPM() {
+
+    }
 
     function day1am() {
         console.log("Hello World");
@@ -55,6 +58,10 @@ function draw() {
         print('Hello World');
         var convertedTemp = f2c(212);
         print (convertedTemp);
+        print(canIGoToTheCasino(age, "IA"));
+        age = 19
+        print(canIGoToTheCasino(age, "IA"))
+        print(canIGoToTheCasino(age, "MN"))
     }
 
     day1am();
@@ -64,8 +71,15 @@ function draw() {
 
     }
     //convert fahrenheit to celcius
-    //Inout temo in Fahreheit
+    //Inout temp in Fahreheit
     function f2c(t) {
         return((t - 32) * (5 / 9));
     }
-    
+
+    function bmiConverter(weight, height) {
+        return 0;  //number, string, boolean
+    }
+    function canIGoToTheCasino(age, location) {
+        return age >= 21 && location == "IA" || age >= 18 && location == "MN";
+
+    }
