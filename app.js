@@ -62,10 +62,10 @@ function draw() {
         age = 19
         print(canIGoToTheCasino(age, "IA"))
         print(canIGoToTheCasino(age, "MN"))
-        print(WhatShouldIWear(temp=90))
+        print(whatShouldIWear(90))
     }
 
-    day1am();
+   // day1am();
 
     function print(input) {
         console.log(input);
@@ -82,20 +82,46 @@ function draw() {
     }
     function canIGoToTheCasino(age, location) {
         return age >= 21 && location == "IA" || age >= 18 && location == "MN";
-        function canISleepIn(day) {
-            // Assume a "normal" Mon-Fri 8am-5pm job
-            //return true if the day if Sat or Sun
-            //or vacation or holiday
-        }
-        function whatIShouldWear(temp) {
-            if(temp >= 75) {
-                return "swim wear)";
-            }else if (temp >= 45){
-                return "light jacket";
-            }else if (temp >= 10){
-                return "Winter jacket";
-            }else {
-                return 'Don\t go outside';
-            }     
+    }   
+    // function whatShouldIWear(temp) {
+    //         if(temp >= 75) {
+    //             return "swim wear)";
+    //         }else if (temp >= 45){
+    //             return "light jacket";
+    //         }else if (temp >= 10){
+    //             return "Winter jacket";
+    //         }else {
+    //             return 'Don\t go outside';
+    //     }  
+
+    // }
     
+function day2AM(){
+    print(1);
+    print(2);
+    print(3);
+
+    var count = 10;
+    while(count >=0) {
+        print (count);
+        count--;
+    }
+    var sum = 0;
+    count = 0;
+    while(true) {
+        
+        var input = parseInt(prompt('Enter a number. Type 0 to end. '));
+        if (input=== 0){
+            break;
+        }   else {
+                sum += input;
+                count++;
+
         }
+    }
+
+console.log('The average of your numbers is ' + sum/count);
+}
+day2AM();
+get
+
