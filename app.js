@@ -96,32 +96,106 @@ function draw() {
 
     // }
     
-function day2AM(){
-    print(1);
-    print(2);
-    print(3);
+// function day2AM(){
+//     print(1);
+//     print(2);
+//     print(3);
 
-    var count = 10;
-    while(count >=0) {
-        print (count);
-        count--;
-    }
-    var sum = 0;
-    count = 0;
-    while(true) {
+//     var count = 10;
+//     while(count >=0) {
+//         print (count);
+//         count--;
+//     }
+// //     var sum = 0;
+// //     count = 0;
+// //     while(true) {
         
-        var input = parseInt(prompt('Enter a number. Type 0 to end. '));
-        if (input=== 0){
-            break;
-        }   else {
-                sum += input;
-                count++;
+// //         var input = parseInt(prompt('Enter a number. Type 0 to end. '));
+// //         if (input=== 0){
+// //             break;
+// //         }   else {
+// //                 sum += input;
+// //                 count++;
 
-        }
-    }
+// //         }
+// //     }
 
-console.log('The average of your numbers is ' + sum/count);
+// // console.log('The average of your numbers is ' + sum/count);
+
+//     for(var count = 100; count >= 0; count-=10) {
+//         print(count);
+//     }
+
+   
+//         var states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'California', 'Colorado', 'Connecticut', 'Delaware', 'District of Columbia', 'Federated States of Micronesia', 'Florida', 'Georgia', 'Guam', 'Hawaii', 'Idaho', 'Illinois', 'Indiana', 'Iowa', 'Kansas', 'Kentucky', 'Louisiana', 'Maine', 'Marshall Islands', 'Maryland', 'Massachusetts', 'Michigan', 'Minnesota', 'Mississippi', 'Missouri', 'Montana', 'Nebraska', 'Nevada', 'New Hampshire', 'New Jersey', 'New Mexico', 'New York', 'North Carolina', 'North Dakota', 'Northern Mariana Islands', 'Ohio', 'Oklahoma', 'Oregon', 'Palau', 'Pennsylvania', 'Puerto Rico', 'Rhode Island', 'South Carolina', 'South Dakota', 'Tennessee', 'Texas', 'Utah', 'Vermont', 'Virgin Island', 'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
+
+//     states.forEach(function(state) {
+//         if(state === "Iowa" || state ==="Illinois") {
+//         print(state + " is cool.");
+
+//         } else {
+//             print (state + " sucks." ); }
+//         });
+//         for(var i = 0; i < months.length; i++ ) {
+//       print(months.length[i])
+
+//     }
+//     var months = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+//     {
+
+//     print(months[0]);
+//     print(months[1]);
+//     print(months[2]);
+//     print(months[3]);
+//     print(months[4]);
+//     } 
+// }   
+
+function day2AM(){
+    var lexie = {
+        firstName: "Lexie",  // key followed byvalue, astring
+        middleName: "Elaine",
+        lastName: "Hawkins",
+        dob: [2,14,1968], //month, day, year
+        likesPizza: true,
+        heightInInches: 66,
+        fullName: function () {
+            return this.firstName + ' ' + this.middleName +' ' +
+            this.lastName;
+        },
+        age: function () {
+            var today = new Date ();
+            var year = today.getFullYear();
+
+            var month = today.getMonth();
+            var day = today.getDate();
+
+            var myAge = year - this.dob[2];
+
+            if (month < this.dob[0] || month === this.dob[0] && day < this.dob[1]) {
+                myAge--;
+            }
+            return (myAge);
+        },
+    };
+
+        
+
+
+
+    print(lexie.firstName);  //object can share keys
+    print(lexie.middleName); //if value no ()
+    print(lexie.lastName);
+    print(lexie.fullName()); //fx has to have()
+    print(lexie.age());
+
+
+
 }
-day2AM();
-get
 
+
+
+
+
+
+day2AM();
